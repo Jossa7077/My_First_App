@@ -1,2 +1,11 @@
 # My_First_App
-Mi primera pagina Web
+Descripción breve del proyecto.
+## Características
+- Aprendizaje Html
+- Aprendizaje en Sql
+- Aprendizaje en Java
+
+## Tecnologías usadas
+- HTML
+- CSS
+- JavaScript
