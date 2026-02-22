@@ -1,11 +1,250 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<!-- etiqueta que especifica wue estamos ecribiendo en html -->
+ <html lang="es"></html> <!-- idioma html -->
+<head> <!-- cabecera -->
+    <meta charset="UTF-8"> <!-- caracteres especiales  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mi pimera pagina web</title>
 </head>
 <body>
+    <h1> Hola, buenos dias</h1>
+    <h1> Etiqueta h1 para titulos  </h1>
+    <h2> Etiquta h2 </h2>
+    <h3> Etiqueta h3 </h3>
+
+    <!-- etiqueta de texto diferente tamaño -->
+     <h4> Hola </h4>
+     <h5>Hola </h5>
+
+     <!-- etiqueta de listado -->
+      <nav aria-label="Navegacion principal">
+        <!-- listas no ordenadas -->
+      <ul class="nav" ></ul>
+      <li><a href="#texto">Texto</a></li>
+        <li> <a href="#listas">Listas</a></li>
+        <li> <a href="#multimedia">Multumedia</a></li>
+        <li> <a href="#tabls">Tablas</a></li>
+        <li> <a href="#formularios">Formularios</a></li>
+        <li> <a href="#Semántica">Semántica</a></li>
+
+  </ul>
+    </nav>
     
+    <main id="contenido" class="container">
+        <section class="card" id="texto">
+      <h2>1) Texto y estructura</h2>
+
+    <section>
+
+    <section>
+
+
+    </section>
+      </section class = "card" id = "Formularios">
+       <h2> 5) Formularios</h2>
+       <form action="#" method="post">
+
+
+       </form>
+      <article>
+        <h3>Encabezados</h3>
+        <p>Esto es un párrafo con <strong>strong</strong>, <em>em</em>, <mark>mark</mark>, <u>u</u> y <code>code</code>.</p>
+
+        <p>
+          Un enlace: <a href="https://developer.mozilla.org/es/" target="_blank" rel="noopener">MDN Web Docs</a>.
+          Un <abbr title="HyperText Markup Language">HTML</abbr> bien usado es oro.
+        </p>
+
+        <blockquote cite="https://developer.mozilla.org/">
+          “La web se construye mejor cuando el HTML tiene significado.”
+        </blockquote> <!-- para citar -->
+
+        <p>
+          Texto pequeño: <small>esto es una nota al pie mental.</small> <!-- texto mas pequeñas letra -->
+        </p>
+
+        <p>
+          Superíndice y subíndice: H<sub>2</sub>O y 2<sup>10</sup>.
+        </p>
+
+        <hr />
+
+        <h3>Detalles expandibles</h3>  <!-- detalles, listas expandibles -->
+        <details>
+          <summary>Abre para ver un tip</summary>
+          <p>Usa etiquetas semánticas: <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code>… tu yo del futuro te lo agradece.</p>
+        </details>
+
+        <h3>Preformateado</h3>  <!-- hace salto de linea y espacios -->
+        <pre><code>function holaMundo() {
+  console.log("Hola, GitHub!");
+}</code></pre>
+      </article>
+    </section>
+   
+
+    <section class="car">
+        <h2>2) Listas</h2>
+        <div class="grid">
+
+            <div> <!-- contenedor -->
+                <h3>LISTAS NO ORDENADAS</h3>
+                <ul>
+                    <li>Pan</li>
+                    <li>Café</li>
+                    <li>Cena</li>
+                    
+                </ul>
+            </div>
+
+        
+
+        <div>
+            <h3>LISTAS ORDENADAS</h3>
+            <ol>
+                <li>Clonaar repo</li>
+                <li>Editar</li>
+                <li>Comentar</li>
+                <li>Push</li>
+            </ol>
+        </div>
+
+        <div>
+            <h3>LISTAS DE DEFINICIONES</h3>
+            <dl>
+                <dt>html</dt>
+                <dt>Estructuras</dt>
+                <dt>Estilo</dt>
+                <dt>JS</dt>
+            </dl>
+        </div>
+    
+      </div>
+    </section>
+
+<section class="card" id="multumedia">
+    <h2>Multimedia</h2>
+    <figure>
+        <img src="https://images.sbs.com.au/dims4/default/82b0e8f/2147483647/strip/true/crop/4000x2250+0+22/resize/1280x720!/quality/90/?url=http%3A%2F%2Fsbs-au-brightspot.s3.amazonaws.com%2F01%2F64%2Fa5918b82491fa2ab681924afe0c5%2Fgettyimages-1450131991.jpg" alt="Imagen de ejemplo">
+    </figure>
+    
+    <p>
+        <button type="button" class="btn"> Botón 
+            <a href="#Formularios" class="btn ghost">Ir a Formularios</a>
+        </button>
+    </p>
+
+</section>
+<section class="card" id="tablas">
+    <h2>4) TABLAS</h2>
+    <table>
+    <caption>Tablas de ejemplo</caption>  <!-- nombre tablas -->
+    <thead>  <!-- cabecera de la tabla -->
+        <tr>   <!-- para especificar fila del elcabezado -->
+            <th scope="col">comando</th> <!-- celdas del encabezado -->
+            <th scope="col">¿Qué hace?</th>
+        </tr>
+</thead>
+
+
+<tbody>
+    <tr>
+        <td>git status</td> <!-- celdad de las filas -->
+        <td>Muestra cambios pendientes</td>  
+    </tr>
+
+    <tr>
+      <td>git add</td>
+      <td>agrega cambios de</td>
+    </tr>
+
+        <tr>
+            <td>git push</td>
+            <td>sube al repo</td>
+        </tr>
+
+
+</tbody>
+
+
+    </table>
+</section>
+
+<section>
+    <h2>5) Formularios</h2>
+    <fieldset>
+<fieldset>Datos Básicos</fieldset>
+<label>
+Nombre
+<input type="text" name="nombre" placeholder="Tu nombre" required>
+</label>
+
+<label>
+Correo
+<input type="email" name="gmail" placeholder="Tu gmail" required>
+</label>
+
+<label>
+Contraseña
+<input type="password" name="password" placeholder="Tu contraseña" required>
+</label>
+
+<label>
+Rango (1 a 10)
+<input type="range" name="rango" min="1" max="10" value="5">
+</label>
+
+<label>
+Color favorito
+<input type="color" name="color">
+</label>
+
+<label>
+archivos
+<input type="file" name="archivo">
+</label>
+
+<label>
+Seleccion
+<select name="opcion">
+<option value="">Elige una</option>
+<option value>Html</option>
+<option value=>Css</option>
+<option value=>Git</option>
+</select>
+
+</label>
+
+<label>
+Comentarios
+<textarea name="Comentarios" rows="4" placeholder="Escribe algo"></textarea>
+</label>
+
+
+<div class="inline">
+<label>
+<input type="radio" name="nivel" value="basico"> Básico </label>
+<label><input type="radio" name="nivel" value="pro">Pro</label>
+</div>
+
+<div class="inline">
+<label>
+<input type="checkbox" name="ok"> Acepto Terminos </label>
+</div>
+
+<div class="actions">
+    <button class="btn"  type="submit">Enviar</button>
+    <button class="btn ghost" type="reset">Limpiar</button>
+
+</div>
+
+
+</fieldset>
+
+</section>
+
+
+ </main>
+
 </body>
 </html>
