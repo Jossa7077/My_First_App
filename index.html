@@ -170,82 +170,73 @@
     </table>
 </section>
 
-<section class="card" id="formularios">
+<section>
     <h2>5) Formularios</h2>
+    <fieldset>
+<fieldset>Datos Básicos</fieldset>
+<label>
+Nombre
+<input type="text" name="nombre" placeholder="Tu nombre" required>
+</label>
 
-    <form action="#" method="post">
-        <fieldset>
-            <legend>Datos Básicos</legend>
+<label>
+Correo
+<input type="email" name="gmail" placeholder="Tu gmail" required>
+</label>
 
-            <label>
-                Nombre
-                <input type="text" name="nombre" placeholder="Tu nombre" required>
-            </label>
+<label>
+Contraseña
+<input type="password" name="password" placeholder="Tu contraseña" required>
+</label>
 
-            <label>
-                Correo
-                <input type="email" name="gmail" placeholder="Tu gmail" required>
-            </label>
+<label>
+Rango (1 a 10)
+<input type="range" name="rango" min="1" max="10" value="5">
+</label>
 
-            <label>
-                Contraseña
-                <input type="password" name="password" placeholder="Tu contraseña" required>
-            </label>
+<label>
+Color favorito
+<input type="color" name="color">
+</label>
 
-            <label>
-                Rango (1 a 10)
-                <input type="range" name="rango" min="1" max="10" value="5">
-            </label>
+<label>
+archivos
+<input type="file" name="archivo">
+</label>
 
-            <label>
-                Color favorito
-                <input type="color" name="color">
-            </label>
+<label>
+Seleccion
+<select name="opcion">
+<option value="">Elige una</option>
+<option value>Html</option>
+<option value=>Css</option>
+<option value=>Git</option>
+</select>
 
-            <label>
-                Archivos
-                <input type="file" name="archivo">
-            </label>
+</label>
 
-            <label>
-                Selección
-                <select name="opcion">
-                    <option value="">Elige una</option>
-                    <option value="html">HTML</option>
-                    <option value="css">CSS</option>
-                    <option value="git">Git</option>
-                </select>
-            </label>
+<label>
+Comentarios
+<textarea name="Comentarios" rows="4" placeholder="Escribe algo"></textarea>
+</label>
 
-            <label>
-                Comentarios
-                <textarea name="comentarios" rows="4" placeholder="Escribe algo"></textarea>
-            </label>
 
-            <div>
-                <label>
-                    <input type="radio" name="nivel" value="basico"> Básico
-                </label>
+<div class="inline">
+<label>
+<input type="radio" name="nivel" value="basico"> Básico </label>
+<label><input type="radio" name="nivel" value="pro">Pro</label>
+</div>
 
-                <label>
-                    <input type="radio" name="nivel" value="pro"> Pro
-                </label>
-            </div>
+<div class="inline">
+<label>
+<input type="checkbox" name="ok"> Acepto Terminos </label>
+</div>
 
-            <div>
-                <label>
-                    <input type="checkbox" name="ok"> Acepto términos
-                </label>
-            </div>
+<div class="actions">
+    <button class="btn"  type="submit">Enviar</button>
+    <button class="btn ghost" type="reset">Limpiar</button>
 
-            <div>
-                <button type="submit">Enviar</button>
-                <button type="reset">Limpiar</button>
-            </div>
-
-        </fieldset>
-    </form>
-</section>
+</div>
 
 
 </fieldset>
